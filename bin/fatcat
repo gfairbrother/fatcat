@@ -1,0 +1,5 @@
+#!/usr/bin/env ruby
+$LOAD_PATH.push File.join(File.dirname(__FILE__), "/../lib")
+require 'fatcat'
+
+log_contents = load_file(ARGV[0])

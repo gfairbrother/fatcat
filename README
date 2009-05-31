@@ -1,0 +1,4 @@
+Parse rails log files to find bottlenecks
+
+Usage:
+./bin/fatcat path_to_logfile
