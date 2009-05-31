@@ -8,7 +8,7 @@ def load_file(fileloc)
   log_contents = []
   
   file = File.new(fileloc, 'r')
-  while (paragraph = file.gets(nil)) # nil gets a whole paragraph (two successive newlines)
+  while (paragraph = file.gets(''))
 
     # create a new LogEntry object which will hold all the data we extract from the log entry
     log_entry = Fatcat::LogEntry.new(paragraph)
